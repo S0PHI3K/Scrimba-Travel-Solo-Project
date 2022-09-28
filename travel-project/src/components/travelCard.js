@@ -1,24 +1,23 @@
 import React from 'react';
-import icon from '../images/mountFuji.jpg'
 import pin from '../images/locationIcon.png'
 
-export default function TravelCard () {
+export default function TravelCard (props) {
     return (
         <div className='travelCard'>
-            <img src={icon} alt='Mount Fuji' className='cardImg'/>
+            <img src={`../../images/${props.imageUrl}`} alt='Mount Fuji' className='cardImg'/>
             <div className='travelInformation'>
                 <div className='travelPlace'>
                 <img src={pin} alt='Location Pin' className='locationPin' />
-                <p className='travelLocation'>JAPAN</p>
-                <p className='travelURL'>view on Google Maps </p>
+                <p className='travelLocation'>{props.location}</p>
+                <p className='travelURL'><a href={props.googleMapsUrl} className='mapClick'>View on Google Maps</a></p>
                 </div>            
-            <h2 className='travelTitle'>Mount Fuji</h2>
+            <h2 className='travelTitle'>{props.title}</h2>
                 <div className='travelDates'>
-                <p className='travelStart'>12 Jan, 2021</p>
+                <p className='travelStart'>{props.startDate}</p>
                 <p>  -  </p>
-                <p className='travelEnd'>24 Jan, 2021</p>
+                <p className='travelEnd'>{props.endDate}</p>
                 </div>
-            <p className='travelDescription'>Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.</p>
+            <p className='travelDescription'>{props.description}</p>
             </div>
             <div className='line'>
             </div>

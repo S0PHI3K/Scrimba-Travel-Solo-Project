@@ -128,3 +128,12 @@ body {
   max-height: 20px;
   background-color: gray;
 }
+
+a {
+  color: gray;
+  
+}
+
+a:hover {
+  color: #F55A5A;
+}
