@@ -21,6 +21,7 @@ body {
 
 .container {
   max-width: 700px;
+  max-height: 100%;
   margin: 0 auto;
   background-color: white;
 }
@@ -47,4 +48,83 @@ body {
   align-items: center;
   color: white;
   margin-left: 15px;
+}
+
+.travelCard {
+  display: flex;
+  align-content: flex-start;
+  background-color: white;
+  font-family: Inter;
+  margin: 40px;
+  border-bottom: 10px, solid, gray;
+}
+
+.cardImg {
+  width: 200px;
+  height: 200px;
+  border-radius: 9px;
+  margin-bottom: 20px;
+}
+
+.travelInformation{
+  margin-left: 20px;
+}
+
+.locationPin {
+  width: 25px;
+  height: 25px;
+}
+
+.travelPlace {
+  display: flex;
+  align-items: center;
+}
+
+.travelLocation{
+  margin-right: 20px;
+  margin-left: 5px;
+  font-size: small;
+  letter-spacing: 2px;
+}
+
+.travelURL {
+  font-size: x-small;
+  text-decoration: underline;
+  color: gray;
+
+}
+
+.travelTitle {
+  font-family: Inter;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 20px;;
+
+}
+
+.travelDates {
+  display: flex;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.travelStart {
+
+}
+
+.travelEnd {
+
+}
+
+.travelDescription {
+  margin-top: 0px;
+  font-size: 10px;
+  max-width: 326px;
+  line-height: 1.5;
+}
+
+.line {
+  max-width: 100%;
+  max-height: 20px;
+  background-color: gray;
 }

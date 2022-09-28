@@ -7,6 +7,8 @@ function App() {
     <div className="container">
       <Banner />
       <TravelCard />
+      <TravelCard />
+      <TravelCard />
     </div>
   );
 }
