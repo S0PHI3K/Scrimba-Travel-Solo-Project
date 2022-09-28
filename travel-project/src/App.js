@@ -4,7 +4,7 @@ import TravelCard from "./components/travelCard";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Banner />
       <TravelCard />
     </div>
